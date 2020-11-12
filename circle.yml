@@ -10,4 +10,4 @@ version: 2.1
 workflows:
   node-tests:
     jobs:
-      - node/test
+      - test
