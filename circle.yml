@@ -12,7 +12,3 @@ test:
   override:    
     - mocha
 
-workflows:
-  node-tests:
-    jobs:
-      - test
