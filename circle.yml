@@ -7,10 +7,6 @@
 #    commands:
 #      - $DOCKER_HUB_TRIGGER
 version: 2.1
-orbs:
-  node: circleci/node@3.0.0
 test:
-  override:    
-    - mocha
-
-
+  jobs:    
+     - mocha
