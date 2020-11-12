@@ -8,7 +8,7 @@
 #      - $DOCKER_HUB_TRIGGER
 version: 2.1
 jobs:
-test:
-  override:    
-    - mocha
+  test:
+    override:    
+      - mocha
 
