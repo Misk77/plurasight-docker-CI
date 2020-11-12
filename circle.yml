@@ -7,6 +7,11 @@
 #    commands:
 #      - $DOCKER_HUB_TRIGGER
 version: 2.1
+jobs:
+test:
+  override:    
+    - mocha
+
 workflows:
   node-tests:
     jobs:
