@@ -7,9 +7,10 @@
 #    commands:
 #      - $DOCKER_HUB_TRIGGER
 version: 2.1
-jobs:
-  test:
-    steps:
-      - checkout
-      - run: echo "this is the test job"
+orbs:
+  node: circleci/node@3.0.0
+workflows:
+  node-tests:
+    jobs:
+      - test
 
