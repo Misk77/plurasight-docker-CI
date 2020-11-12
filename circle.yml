@@ -7,8 +7,9 @@
 #    commands:
 #      - $DOCKER_HUB_TRIGGER
 version: 2.1
-workflows:
+jobs:
   test:
-  jobs:    
-    - mocha
+    steps:
+      - checkout
+      - run: echo "this is the test job"
 
